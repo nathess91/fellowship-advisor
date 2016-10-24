@@ -5,9 +5,11 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.confirm(user_params)
+    p @user
+    p user_params
     if @user
       login(@user)
-      redirect_to user_path
+      redirect_to @user
     else
       flash[:error] = "Wrong username or password."
       redirect_to login_path
