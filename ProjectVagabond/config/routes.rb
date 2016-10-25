@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   post '/sessions', to: 'sessions#create'
 
+  patch '/users/:id', to: 'users#update', as: 'update_user'
   resources :users, except: :index
   resources :posts
 end
