@@ -1,0 +1,22 @@
+<h1 class="txt-center">
+  New Post
+</h1>
+
+<%= form_for([@city, @post]) do |f| %>
+    <div class="container well margin-top-20 small-container">
+    	<div class="bold margin-top-20">
+    	</div>
+    	<div class="margin-top-20">
+    		<%= f.text_field :title, placeholder: "Mines of Moria", class: "form-control" %>
+    	</div>
+    	<div class="bold margin-top-20">
+    	</div>
+    	<div class="margin-top-20">
+    		<%= f.text_field :content, placeholder: "Watch out for the Balrog", class: "form-control" %>
+    	</div>
+    	<div class="margin-top-20">
+    		<a href="/" class="btn btn-default">Cancel</a>
+    		<%= f.submit "Create Post", class: "btn btn-primary" %>
+    	</div>
+    </div>
+<% end %>

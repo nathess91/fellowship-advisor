@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  belongs_to :user
+  has_one :user, through: :post_users
   belongs_to :city
 end
