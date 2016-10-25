@@ -12,7 +12,7 @@ class CitiesController < ApplicationController
   end
 
   def show
-    @city = City.find_by_name(params[:name])
+    @city = City.friendly.find(params[:id])
   end
 
   private
