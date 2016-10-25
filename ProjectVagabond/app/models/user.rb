@@ -4,6 +4,8 @@ class User < ApplicationRecord
   has_many :post_users, dependent: :destroy
   has_many :posts, through: :post_users
 
+  validates :email, uniqueness: true
+
   def self.confirm(params)
     @user = User.find_by({email: params[:email]})
     @user ? @user.authenticate(params[:password]) : false

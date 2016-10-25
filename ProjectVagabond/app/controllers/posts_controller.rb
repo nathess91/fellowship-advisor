@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+   before_action :authenticate
+
+
+
   def index
     @posts = User.find(current_user.id).posts
   end
