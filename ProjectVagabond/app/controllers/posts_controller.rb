@@ -15,7 +15,10 @@ class PostsController < ApplicationController
   def create
     @post = City.friendly.find(params[:city_id])
             .posts
-            .create(post_params)
+            .new(post_params)
+
+    @post.user_id = current_user.id
+    @post.save
 
     if @post.save
       flash[:success] = "New post successfully created!"

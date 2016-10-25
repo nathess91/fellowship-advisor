@@ -1,4 +1,5 @@
 class CitiesController < ApplicationController
+
   def index
     @cities = City.all
   end
@@ -14,6 +15,8 @@ class CitiesController < ApplicationController
   def show
     @city = City.friendly.find(params[:id])
     @post = Post.new
+    # @posts = City.friendly.find(params[:id]).posts
+    @posts = City.friendly.find(params[:id]).posts
   end
 
   private

@@ -18,7 +18,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.friendly.find(params[:id])
-    @posts = Post.all
+    @posts = Post.where(user_id: current_user.id)
+
     # @city = City.find(params[:city_id])
   end
 

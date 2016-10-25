@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :content
       t.integer :city_id, foreign_key: true
+      t.integer :user_id, foreign_key: true
 
       t.timestamps
     end
