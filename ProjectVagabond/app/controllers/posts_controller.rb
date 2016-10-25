@@ -28,8 +28,8 @@ class PostsController < ApplicationController
 
   def show
     @user = User.find(current_user.id)
-    @city = City.find(params[:city_id])
     @post = Post.find(params[:id])
+    @city = City.find(params[:id])
   end
 
   private

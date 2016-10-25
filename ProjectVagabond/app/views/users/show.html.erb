@@ -3,3 +3,9 @@
 <span>Last seen: </span><%= @user.current_city %><br>
 <span>Joined: </span><%= @user.created_at.strftime("%d %b. %Y") %><br>
 <%= link_to "Edit Profile", edit_user_path(@user.id) %>
+
+<h3>Posts</h3>
+<% @posts.each do |post| %>
+ <p><b><%= link_to post.title, show_post_path(@user.id, post.id) %></b></p><br>
+ <p><%= post.content %></p>
+<% end %>

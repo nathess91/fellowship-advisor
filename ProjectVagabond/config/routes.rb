@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   patch '/users/:id', to: 'users#update', as: 'update_user'
 
+  get '/users/:id/posts/:id', to: 'posts#show', as: 'show_post'
+
   resources :users, except: :index
   resources :cities do
     resources :posts
