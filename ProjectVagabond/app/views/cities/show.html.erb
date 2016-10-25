@@ -7,6 +7,17 @@
 
 <div class="city-show-posts">
 
+	<% @posts.each do |post| %>
+
+	<h5><%= get_user(post.user_id).name %></h5></br>
+
+	<%= image_tag(get_user(post.user_id).picture, class: "img-size") %><br />
+
+	<h2><%= post.title  %></h2>
+	<span><%= post.content %></span>
+
+	<% end %>
+
 </div>
 
 <!--New Post Modal-->
