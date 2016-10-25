@@ -13,6 +13,7 @@ class CitiesController < ApplicationController
 
   def show
     @city = City.friendly.find(params[:id])
+    @post = Post.new
   end
 
   private
