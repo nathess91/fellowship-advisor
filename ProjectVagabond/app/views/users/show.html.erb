@@ -2,4 +2,4 @@
 <%= image_tag(@user.picture, :class => "img-size") %><br>
 <span>Last seen: </span><%= @user.current_city %><br>
 <span>Joined: </span><%= @user.created_at.strftime("%d %b. %Y") %><br>
-<%= button_to "Edit Profile", edit_user_path %>
+<%= link_to "Edit Profile", edit_user_path(@user.id) %>

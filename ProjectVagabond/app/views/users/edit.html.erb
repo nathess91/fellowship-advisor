@@ -1,0 +1,9 @@
+<h1>Update <%= @user.name %></h1>
+<%= form_for(@user,url: update_user_path) do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.text_field :current_city, placeholder: "Current City" %>
+  <%= f.email_field :email, placeholder: "Email" %>
+  <%= f.password_field :password, placeholder: "Password" %>
+  <%= f.text_field :picture, placeholder: "Picture URL" %>
+  <%= f.submit "Save Changes" %>
+<% end %>

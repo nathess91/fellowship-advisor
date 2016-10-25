@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get '/users/:user_id/posts',     to: 'post_users#index', as: 'user_posts'
   post '/posts/:post_id/users', to: 'post_users#create', as: 'post_users'
 
+  patch '/users/:id', to: 'users#update', as: 'update_user'
+
   resources :users, except: :index
   resources :cities do
     resources :posts
