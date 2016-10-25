@@ -17,10 +17,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.friendly.find(params[:id])
-    @posts = Post.where(user_id: current_user.id)
-
-    # @city = City.find(params[:city_id])
+    if current_user.id == params[:id]
+      @user = User.friendly.find(params[:id])
+      @posts = Post.where(user_id: current_user.id)
+    else
+      @user = User.friendly.find(current_user.id)
+      @posts = Post.where(user_id: current_user.id)
+    end
   end
 
   def edit
