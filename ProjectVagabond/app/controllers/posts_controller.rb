@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = User.find(current_user.id).posts
+    @posts = User.friendly.find(current_user.id).posts
   end
 
   def new
@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = City.find(params[:city_id])
+    @post = City.friendly.find(params[:city_id])
             .posts
             .create(post_params)
 
@@ -23,9 +23,9 @@ class PostsController < ApplicationController
   end
 
   def show
-    @user = User.find(current_user.id)
+    @user = User.friendly.find(current_user.id)
     @post = Post.find(params[:id])
-    @city = City.find(params[:id])
+    @city = City.friendly.find(params[:id])
   end
 
   private
