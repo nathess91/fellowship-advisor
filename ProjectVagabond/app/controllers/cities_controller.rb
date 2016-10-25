@@ -11,6 +11,10 @@ class CitiesController < ApplicationController
     @city = City.create(city_params)
   end
 
+  def show
+    @city = City.find_by_name(params[:name])
+  end
+
   private
 
   def city_params
