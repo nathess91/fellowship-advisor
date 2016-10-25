@@ -15,8 +15,7 @@ class CitiesController < ApplicationController
   def show
     @city = City.friendly.find(params[:id])
     @post = Post.new
-    # @posts = City.friendly.find(params[:id]).posts
-    @posts = City.friendly.find(params[:id]).posts
+    @posts = City.friendly.find(params[:id]).posts.order(created_at: :desc)
   end
 
   private
