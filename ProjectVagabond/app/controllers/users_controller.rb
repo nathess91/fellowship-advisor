@@ -17,6 +17,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @posts = Post.all
+    # @city = City.find(params[:city_id])
   end
   def edit
     @user = User.find(params[:id])
