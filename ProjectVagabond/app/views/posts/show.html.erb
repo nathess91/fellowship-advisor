@@ -1,8 +1,8 @@
 <h3><%= @city.name %></h3>
-<%= image_tag(@user.picture, :class => "img-size") %><br>
-<h5><%= @user.name %></h5></br>
-<span>Last seen: </span><%= @user.current_city %><br>
-<span>Joined: </span><%= @user.created_at.strftime("%d %b. %Y") %><br>
+<%= image_tag(get_user(@post.user_id).picture, :class => "img-size") %><br>
+<h5><%= get_user(@post.user_id).name %></h5></br>
+<span>Last seen: </span><%= get_user(@post.user_id).current_city %><br>
+<span>Joined: </span><%= get_user(@post.user_id).created_at.strftime("%d %b. %Y") %><br>
 <h2><%= @post.title  %></h2>
 <span><%= @post.content %></span>
 
