@@ -1,4 +1,4 @@
-<h3><%= @city.name %></h3>
+<h3><%=link_to @city.name, city_path(params[:city_id]) %></h3>
 <%= image_tag(get_user(@post.user_id).picture, :class => "img-size") %><br>
 <h5><%= get_user(@post.user_id).name %></h5></br>
 <span>Last seen: </span><%= get_user(@post.user_id).current_city %><br>
@@ -7,6 +7,22 @@
 <span><%= @post.content %></span>
 
 <% @comments.each do |comment| %>
-  <%= get_user(comment.user_id).name %>
+  <br><%= get_user(comment.user_id).name %> <span>:</span>
   <%= comment.content %>
 <% end %>
+
+
+
+  <%= form_for([@city, @post, @comment_new], url: city_post_comments_path(@city.id, @post.id), method: "post") do |f| %>
+      <div class="container well margin-top-20 small-container">
+      	<div class="bold margin-top-20">
+      	</div>
+      	<div class="margin-top-20">
+      		<%= f.text_field :content, placeholder: "Enter comment", class: "form-control" %>
+      	</div>
+      	<div class="margin-top-20">
+      		<!-- <a href="/" class="btn btn-default">Cancel</a> -->
+      		<%= f.submit "Create Comment", class: "btn btn-primary" %>
+      	</div>
+      </div>
+  <% end %>
