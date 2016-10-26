@@ -1,4 +1,4 @@
-<h3><%=link_to @city.name, city_path(params[:city_id]) %></h3>
+<h3><%=link_to @city.name, city_path(@city.id) %></h3>
 <%= image_tag(get_user(@post.user_id).picture, :class => "img-size") %><br>
 <h5><%= get_user(@post.user_id).name %></h5></br>
 <span>Last seen: </span><%= get_user(@post.user_id).current_city %><br>

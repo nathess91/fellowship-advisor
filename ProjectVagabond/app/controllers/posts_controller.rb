@@ -29,10 +29,15 @@ class PostsController < ApplicationController
     end
   end
 
+  	def get_city(post_id)
+  		return Post.find(post_id).city_id
+  	end
+
+
   def show
     @user = User.friendly.find(current_user.id)
     @post = Post.find(params[:id])
-    @city = City.friendly.find(params[:city_id])
+    @city = City.friendly.find(get_city(params[:id]))
     @comments = Comment.where(post_id: params[:id])
     @comment_new = Comment.new
   end
