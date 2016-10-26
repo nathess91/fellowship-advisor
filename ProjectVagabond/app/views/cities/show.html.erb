@@ -15,6 +15,11 @@
 
 	<h2><%= link_to post.title, city_post_path(@city, post.id)  %></h2>
 	<span><%= post.content %></span>
+ <% comments = get_comments(post.id) %>
+	<% comments.each do |comment| %>
+	  <%= get_user(comment.user_id).name %>
+	  <%= comment.content %>
+	<% end %>
 
 	<% end %>
 
