@@ -1,0 +1,17 @@
+<h1 class="txt-center">
+  New Comment
+</h1>
+
+<%= form_for([@city, @post, @comment], url: city_post_comments_path(@city.id, @post.id), method: "post") do |f| %>
+    <div class="container well margin-top-20 small-container">
+    	<div class="bold margin-top-20">
+    	</div>
+    	<div class="margin-top-20">
+    		<%= f.text_field :content, placeholder: "Enter comment", class: "form-control" %>
+    	</div>
+    	<div class="margin-top-20">
+    		<a href="/" class="btn btn-default">Cancel</a>
+    		<%= f.submit "Create Comment", class: "btn btn-primary" %>
+    	</div>
+    </div>
+<% end %>
