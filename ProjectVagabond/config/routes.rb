@@ -15,6 +15,10 @@ Rails.application.routes.draw do
 
   get '/users/:id/posts/:id', to: 'posts#show', as: 'show_post'
 
+  delete '/cities/:city_id/posts/:id', to: 'posts#destroy', as: 'delete_post'
+
+  patch '/cities/:city_id/posts/:id', to: 'posts#update', as: 'update_post'
+
   resources :users, except: :index
   resources :cities do
     resources :posts
