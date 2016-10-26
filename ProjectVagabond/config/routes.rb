@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   patch '/users/:id', to: 'users#update', as: 'update_user'
 
-  get '/users/:id/posts/:id', to: 'posts#show', as: 'show_post'
+  get '/users/:user_id/posts/:id', to: 'posts#show', as: 'show_post'
 
   delete '/cities/:city_id/posts/:id', to: 'posts#destroy', as: 'delete_post'
 
