@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   patch '/cities/:city_id/posts/:id', to: 'posts#update', as: 'update_post'
 
+  patch '/cities/:city_id/posts/:post_id/comments/:id', to: 'comments#update', as: 'update_comment'
+
   resources :users, except: :index
 
   resources :cities do

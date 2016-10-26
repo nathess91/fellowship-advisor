@@ -24,10 +24,19 @@ class CommentsController < ApplicationController
   end
 
   def edit
+    @post = Post.find(params[:post_id])
+    @city = City.friendly.find(params[:city_id])
     @comment = Comment.find(params[:id])
+    if current_user.id == @comment.user_id
+      render :edit
+    else
+      flash[:error] = "You are not allowed to manipulate other users' comments!"
+      redirect_to :back
+    end
   end
 
   def update
+    @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
     @comment.update_attributes(comment_params)
     redirect_to city_post_path(params[:city_id], @post.id)

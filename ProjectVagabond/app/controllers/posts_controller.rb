@@ -33,6 +33,7 @@ class PostsController < ApplicationController
     @user = User.friendly.find(current_user.id)
     @post = Post.find(params[:id])
     @city = City.friendly.find(params[:id])
+    @comments = Comment.where(post_id: params[:id])
   end
 
   def edit

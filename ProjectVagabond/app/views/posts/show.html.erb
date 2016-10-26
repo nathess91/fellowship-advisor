@@ -5,3 +5,8 @@
 <span>Joined: </span><%= @user.created_at.strftime("%d %b. %Y") %><br>
 <h2><%= @post.title  %></h2>
 <span><%= @post.content %></span>
+
+<% @comments.each do |comment| %>
+  <%= get_user(comment.user_id).name %>
+  <%= comment.content %>
+<% end %>
