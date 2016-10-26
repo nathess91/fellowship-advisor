@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+
+
   def new
     @comment = Comment.new
     @post = Post.find(params[:post_id])
@@ -31,7 +33,7 @@ class CommentsController < ApplicationController
       render :edit
     else
       flash[:error] = "You are not allowed to manipulate other users' comments!"
-      redirect_to :back
+      redirect_to city_post_path(params[:city_id], @post.id)
     end
   end
 
@@ -39,13 +41,13 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
     @comment.update_attributes(comment_params)
-    redirect_to city_post_path(params[:city_id], @post.id)
+    redirect_to city_path(params[:city_id])
   end
 
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to :back
+    redirect_to city_path(params[:city_id])
   end
 
   private
