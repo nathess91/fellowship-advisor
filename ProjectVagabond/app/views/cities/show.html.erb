@@ -14,7 +14,7 @@
 	<%= image_tag(get_user(post.user_id).picture, class: "img-size") %><br />
 
 	<h2><%= link_to post.title, city_post_path(@city, post.id)  %></h2>
-	<span><%= post.content %></span><br>
+	<p class="post_content"><%= post.content %></p><br>
  <% comments = get_comments(post.id) %>
 	<% comments.each do |comment| %>
 	  <br><%= get_user(comment.user_id).name %><span>:</span>
