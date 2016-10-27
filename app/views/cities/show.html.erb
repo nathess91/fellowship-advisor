@@ -6,29 +6,35 @@
 </div>
 
 <div class="city-show-posts">
-
 	<% @posts.each do |post| %>
+		<div class="container-gray float-fix">
+			<section class="user-profile-section-small">
+				<%= image_tag(get_user(post.user_id).picture, class: "profile-image-small") %>
+				<!-- <h5><%= get_user(post.user_id).name %></h5> -->
+			</section>
 
-	<h5><%= get_user(post.user_id).name %></h5></br>
+			<section class="user-post-section-wide">
+				<h2><%= link_to post.title, city_post_path(@city, post.id)  %></h2>
+				<span class="post-content"><%= post.content %></span>
+				<% comments = get_comments(post.id) %>
+				<% comments.each do |comment| %>
+					<div class="comment-content-wide">	
+						<p class="comment">
+							<span class="comment-user-name"><%= get_user(comment.user_id).name %>:</span>
+							<span class="comment-content"><%= comment.content %></span>
+						</p>
+					</div>
 
-	<%= image_tag(get_user(post.user_id).picture, class: "img-size") %><br />
-
-	<h2><%= link_to post.title, city_post_path(@city, post.id)  %></h2>
-	<p class="post_content"><%= post.content %></p><br>
- <% comments = get_comments(post.id) %>
-	<% comments.each do |comment| %>
-	  <br><%= get_user(comment.user_id).name %><span>:</span>
-	  <%= comment.content %>
-
-		<% if current_user && current_user.id == comment.user_id %>
-		<br><%= link_to "Edit", edit_city_post_comment_path(@city.id, post.id, comment.id) %> <span> - </span>
-		<%= link_to "Delete", delete_comment_path(@city.id, post.id, comment.id), data: { confirm: 'Are you sure you want to delete this comment?' }, method: :delete %>
-		<% end %>
-
+					<% if current_user && current_user.id == comment.user_id %>
+						<%= link_to "Delete", delete_comment_path(@city.id, post.id, comment.id), data: { confirm: 'Are you sure you want to delete this comment?' }, method: :delete, class: "btn btn-danger" %>
+						
+						<%= link_to "Edit", edit_city_post_comment_path(@city.id, post.id, comment.id), class: "btn btn-primary" %>
+					<% end %>
+				<% end %>
+			</section>
+		</div>
+		<%= link_to "Comment", city_post_path(@city, post.id), class: "btn btn-primary"  %>
 	<% end %>
-<br><%= link_to "Comment", city_post_path(@city, post.id)  %>
-	<% end %>
-
 </div>
 
 <!--New Post Modal-->
@@ -47,19 +53,19 @@
 				<div class="bold">
 					Title
 				</div>
-				<div class="margin-top-20">
+				<div class="input-field">
 					<%= f.text_field :title, placeholder: "Title", class: "form-control" %>
 				</div>
-				<div class="bold margin-top-20">
+				<div class="bold">
 					Content
 				</div>
-				<div class="margin-top-20">
+				<div class="input-field">
 					<%= f.text_field :content, placeholder: "Content", class: "form-control" %>
 				</div>
 			</div>
 
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 				<%= f.submit "Create Post", class: "btn btn-primary" %>
 			</div>
 

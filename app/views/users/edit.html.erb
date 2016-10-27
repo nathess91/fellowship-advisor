@@ -1,9 +1,25 @@
-<h1>Update <%= @user.name %></h1>
-<%= form_for(@user,url: update_user_path) do |f| %>
-  <%= f.text_field :name, placeholder: "Name" %>
-  <%= f.text_field :current_city, placeholder: "Current City" %>
-  <%= f.email_field :email, placeholder: "Email" %>
-  <%= f.password_field :password, placeholder: "Password" %>
-  <%= f.text_field :picture, placeholder: "Picture URL" %>
-  <%= f.submit "Save Changes" %>
-<% end %>
+
+<section class="form-container">
+	<h1>Update <%= @user.name %></h1>
+		<%= form_for(@user,url: update_user_path) do |f| %>
+		<div class="container-gray">
+			<div class="input-field">
+			  <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+			</div>
+			<div class="input-field">
+			  <%= f.text_field :current_city, placeholder: "Current City", class: "form-control" %>
+			</div>
+			<div class="input-field">
+			  <%= f.email_field :email, placeholder: "Email", class: "form-control" %>
+			</div>
+			<div class="input-field">
+			  <%= f.password_field :password, placeholder: "Password", class: "form-control" %>
+			</div>
+			<div class="input-field">
+			  <%= f.text_field :picture, placeholder: "Picture URL", class: "form-control" %>
+			</div>
+			<%= link_to "Cancel", :back, class: "btn btn-secondary" %>
+		  <%= f.submit "Save Changes", class: "btn btn-primary" %>
+	  </div>
+	<% end %>
+</section>
