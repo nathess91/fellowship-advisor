@@ -11,30 +11,30 @@ cities = City.create([
   {
     name: "The Shire",
     country: "Eriador",
-    picture: "https://s-media-cache-ak0.pinimg.com/originals/28/59/1d/28591dcb69a0d6ad3701dab8939d3561.jpg"
+    picture: "http://i.imgur.com/vDwV7Sz.jpg"
   },
   {
     name: "Rivendell",
     country: "Eriador",
-    picture: "http://vignette4.wikia.nocookie.net/lotr/images/5/53/Rivendell_-_The_Hobbit.PNG/revision/latest?cb=20121111111511"
+    picture: "http://i.imgur.com/HnzRkEN.jpg"
   },
   {
     name: "Isengard",
     country: "Rohan",
-    picture: "http://vignette3.wikia.nocookie.net/lotr/images/4/42/Destruction_of_Isengard_-_Day_After.jpg/revision/latest?cb=20120606113627"
+    picture: "http://i.imgur.com/IBTYK7R.jpg"
   },
   {
     name: "Helm's Deep",
     country: "Rohan",
-    picture: "http://www.lordoftherings.net/legend/lands/helmsdeep/images/helmsdeep1_large.jpg"
+    picture: "http://i.imgur.com/bPxebsL.png"
   },
   {
     name: "Mount Doom",
     country: "Mordor",
-    picture: "http://www.thelandofshadow.com/wp-content/uploads/2016/02/Orodruin6.jpg"
+    picture: "http://i.imgur.com/FlgkWAX.png"
   },
   {
     name: "Shelob's Lair",
     country: "Mordor",
-    picture: "http://blindfolly.org/blindfolly/wp-content/uploads/2015/08/lordoftherings_-spiderweb600.jpg"
+    picture: "http://i.imgur.com/c1mkcRk.jpg"
   }])

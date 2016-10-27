@@ -1,14 +1,58 @@
+body {
+  background-color: #5D613E;
+}
+
 nav {
   font-family: 'Jim Nightshade', cursive;
 }
 
+.navbar-inverse {
+  background-color: #222;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
 .navbar-inverse .navbar-brand {
+  color: #ffbf00;
+  border: none;
+}
+
+#banner {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#middle-earth {
+  font-family: 'Jim Nightshade', cursive;
+}
+
+h3 a {
+  font-family: 'Jim Nightshade', cursive;
   color: #ffbf00;
 }
 
+h3 a:hover {
+  font-family: 'Jim Nightshade', cursive;
+  color: white;
+  text-decoration: none;
+}
+
+.cities {
+  text-align: center;
+}
+
 .img-size {
-  height: 300px;
-  width: 300px;
+  width: 80vw;
+  clear: both;
+}
+
+.img-size .text {
+  position: relative;
+  bottom: 30px;
+  left: 0px;
+  visibility: hidden;
 }
 
 .profile-image-small {
