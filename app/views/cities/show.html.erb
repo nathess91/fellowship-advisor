@@ -1,7 +1,8 @@
 <h1 class="city-name"><%= @city.name %></h1>
 <a href="#" data-toggle="modal" data-target="#new-post-modal" class="btn btn-primary new-post">Add New Post</a>
 
-<div class="city-show-image">
+<div class="city-show-image-container">
+
 	<%= image_tag(@city.picture, class: "city-show-image")%>
 </div>
 
@@ -33,7 +34,7 @@
 				<% end %>
 			</section>
 		</div>
-		<%= link_to "Comment", city_post_path(@city, post.id), class: "btn btn-primary"  %>
+		<%= link_to "Comment", city_post_path(@city, post.id), class: "btn btn-primary bottom-margin"  %>
 	<% end %>
 </div>
 

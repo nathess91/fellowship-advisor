@@ -17,7 +17,7 @@
 
   <body>
     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
+      <div class="wrap">
         <div class="navbar-header">
           <%= link_to "FellowshipAdvisor", root_path, :class => "navbar-brand active golden" %>
         </div>
@@ -34,21 +34,42 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <div class="wrap">
 
 
+    <% if flash[:error] %>
+    <div class="container small-container">
+      <div class="alert alert-danger">
+        <%= flash[:error] %>
+      </div>
+    </div>
+    <% end %>
 
+    <% if flash[:success] %>
+    <div class="container small-container">
+      <div class="alert alert-success">
+        <%= flash[:success] %>
+      </div>
+    </div>
+    <% end %>
 
-    <%= flash[:error] %>
-      <div class="wrap">
+<!--       <div class="wrap"> -->
 
           <%= yield %>
 
-      </div>
+      <!-- </div> -->
     </div>
+
+    <footer>
+      <p>&copy;2016 Fellowship Advisor</p>
+    </footer>
+
     <!--jQuery-->
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
   </body>
 </html>
