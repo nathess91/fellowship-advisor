@@ -1,10 +1,29 @@
-<h1>Middle Earth</h1>
-<% @cities.each do |city| %>
-  <div class="col-md-6">
-<a href="<%=city_path(city)%>">
-  <%= image_tag(city.picture, :class => "img-size" ) %>
-  <h3><%= link_to city.name, city_path(city) %></h3>
-</a>
-</div>
+<img id="banner" src="http://i.imgur.com/dDznL1V.png">
+<div class="cities container">
+  <% @cities.each do |city| %>
+  <style>
+  .city-image{
+    display: block;
+    width: 80vw;
+  }
+    .<%=city.name.delete("  '")%>{
+      background: url(<%=city.picture%>);
+      width: 80vw;
+      margin:50px;
+      height:500px;
+      cursor: pointer;
+      margin: auto;
+    }
 
-<% end %>
+  </style>
+
+<a href='<%=city_path(city.id)%>' class="city-image img-size col-md-6 <%=city.name.delete(" '")%>">
+
+      <!-- <h3 class="text"><%= link_to city.name, city_path(city) %></h3> -->
+      <%= link_to "Edit Realm",  edit_city_path(city.id) %> -
+      <%= link_to "Delete Realm", delete_city_path(city.id),method:"delete" %>
+
+</a>
+
+  <% end %>
+</div>
