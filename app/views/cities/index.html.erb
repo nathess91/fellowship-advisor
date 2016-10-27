@@ -1,29 +1,61 @@
+
+
 <img id="banner" src="http://i.imgur.com/dDznL1V.png">
-<div class="cities container">
+<div class="cities-wrap">
   <% @cities.each do |city| %>
+
   <style>
-  .city-image{
+  .city-image {
     display: block;
-    width: 80vw;
+    width: 100%;
+    height: 500px;
+    text-decoration: none;
+    padding: 0;
+    margin: 30px auto;
   }
-    .<%=city.name.delete("  '")%>{
-      background: url(<%=city.picture%>);
-      width: 80vw;
-      margin:50px;
-      height:500px;
-      cursor: pointer;
-      margin: auto;
-    }
+
+  a.city-image {
+    text-decoration: none !important;
+  }
+
+  .<%=city.name.delete("  '")%> {
+    background: url(<%=city.picture%>);
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .city-title-overlay {
+    display: none;
+  }
+
+
+  .city-image:hover .city-title-overlay {
+    display: block;
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 86px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 20% 0 0;
+    margin: 30px 0 0 30px;
+  }
+
+  .ShelobsLair {
+    margin: 30px auto !important;
+  }
 
   </style>
 
-<a href='<%=city_path(city.id)%>' class="city-image img-size col-md-6 <%=city.name.delete(" '")%>">
 
-      <!-- <h3 class="text"><%= link_to city.name, city_path(city) %></h3> -->
-      <%= link_to "Edit Realm",  edit_city_path(city.id) %> -
-      <%= link_to "Delete Realm", delete_city_path(city.id),method:"delete" %>
+  <a href='<%=city_path(city.id)%>' class="city-image <%=city.name.delete(" '")%>">
 
-</a>
+  <p class="city-title-overlay"><%= city.name %></p>
+
+  </a>
+
+      <%= link_to "Delete Realm", delete_city_path(city.id),method:"delete", class: "btn btn-danger" %>
+
+      <%= link_to "Edit Realm",  edit_city_path(city.id), class: "btn btn-primary" %>
 
   <% end %>
 </div>

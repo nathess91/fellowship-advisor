@@ -27,27 +27,32 @@ input {
 
 .edit-profile-button,
 .edit-post-button,
-.btn-secondary {
+.btn-secondary,
+.btn-primary {
   display: inline-block;
-  background: #337ab7;
+/*  background: #337ab7;*/
+  background: #000;
   font-size: 14px;
   line-height: 1.42857143;
   font-weight: 400;
   text-align: center;
-  color: #fff;
+  color: #ffbf00;
   padding: 6px 12px;
   margin: 0;
-  border: 1px solid #2e6da4;
+  border: 1px solid #ffbf00;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .edit-profile-button:hover,
 .edit-post-button:hover,
-.btn-secondary:hover {
-  background: #1e6da4;
-  color: #fff;
+.btn-secondary:hover,
+.btn-primary:hover {
+  /*background: #1e6da4;*/
+  background: #333;
+  color: #ffbf00;
   text-decoration: none;
+  border: 1px solid #ffbf00;
 }
 
 .btn-secondary {
@@ -71,6 +76,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: #222;
 	padding: 0;
 	margin: 0 0 15px;
 }
@@ -87,8 +93,18 @@ h6 {
 
 .wrap {
 	max-width: 1140px;
+	min-height: 100vh;
 	padding: 0;
 	margin: 0 auto;
+}
+
+hr {
+	color: #222;
+	background: #222;
+}
+
+nav .wrap {
+	min-height: auto;
 }
 
 .float-fix {
@@ -114,6 +130,7 @@ h6 {
 .user-profile-section {
 	max-width: 300px;
 	font-size: 18px;
+	color: #222;
 	padding: 0;
 	margin: 20px 50px 0 0;
 	float: left;
@@ -121,7 +138,22 @@ h6 {
 
 .user-post-section {
 	min-width: 68%;
+	color: #222;
 	padding: 0;
 	margin: 20px 0 0;
 	float: left;
+}
+
+/* Footer
+**********************************************/
+
+footer {
+	background: #000;
+	width: 100%;
+	text-align: center;
+	color: #ffbf00;
+	font-weight: 300;
+	padding: 25px 0 20px;
+	margin: 60px 0 0;
+	word-spacing: 5px;
 }

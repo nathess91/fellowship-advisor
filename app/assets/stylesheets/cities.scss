@@ -4,16 +4,19 @@ body {
 
 nav {
   font-family: 'Jim Nightshade', cursive;
+  font-size: 24px;
 }
 
 .navbar-inverse {
   background-color: #222;
   width: 100%;
+  padding: 15px 0;
   border: none;
   border-radius: 0;
 }
 
 .navbar-inverse .navbar-brand {
+	font-size: 36px;
   color: #ffbf00;
   border: none;
 }
@@ -70,12 +73,19 @@ float-fix {
 	overflow: hidden;
 }
 
+.city-show-image-container {
+	width: 100%;
+	max-height: 500px;
+	margin: 0 0 80px;
+	overflow: hidden;
+
+}
+
 .city-show-image {
 	background-size: cover;
-	width: 1000px;
-	height: 300px;
+	width: 100%;
+	height: auto;
 	margin: 0 0 80px;
-
 }
 
 .city-name {
@@ -104,4 +114,8 @@ float-fix {
 .user-post-section-wide h2 {
 	padding: 0;
 	margin: 0;
+}
+
+.bottom-margin {
+	margin: 0 0 40px !important;
 }

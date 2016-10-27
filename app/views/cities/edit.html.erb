@@ -1,7 +1,21 @@
-<h1> Edit <%= @city.name %> </h1>
-<%= form_for(@city,url:update_city_path) do |f| %>
-  <%= f.text_field :name, placeholder:"name" %>
-  <%= f.text_field :country, placeholder:"country" %>
-  <%= f.text_field :picture, placeholder: "picture" %>
- <%= f.submit %>
- <% end %>
+<section class="form-container">
+	<div class="container-gray">
+
+		<h2> Edit <%= @city.name %> </h2>
+		<%= form_for(@city,url:update_city_path) do |f| %>
+			<div class="input-field">
+			  <%= f.text_field :name, placeholder:"name", class: "form-control" %>
+		  </div>
+		  <div class="input-field">
+			  <%= f.text_field :country, placeholder:"country", class: "form-control" %>
+		  </div>
+		  <div class="input-field">
+			  <%= f.text_field :picture, placeholder: "picture", class: "form-control" %>
+		  </div>
+		  <%= link_to "Cancel", :back, class: "btn btn-secondary" %>
+		 <%= f.submit "Update Realm", class: "btn btn-primary" %>
+		 <% end %>
+
+
+	</div>
+</section>
