@@ -1,17 +1,18 @@
-<h1 class="txt-center">
-  Edit Comment
-</h1>
+<section class="form-container">
 
-<%= form_for([@city, @post, @comment], url: update_comment_path(@city.id, @post.id, @comment.id), method: "patch") do |f| %>
-    <div class="container well margin-top-20 small-container">
-    	<div class="bold margin-top-20">
-    	</div>
-    	<div class="margin-top-20">
-    		<%= f.text_field :content, placeholder: "Enter comment", class: "form-control" %>
-    	</div>
-    	<div class="margin-top-20">
-    		<a href="/" class="btn btn-default">Cancel</a>
-    		<%= f.submit "Save Changes", class: "btn btn-primary" %>
-    	</div>
-    </div>
-<% end %>
+    <h2>Edit Comment</h2>
+    <%= form_for([@city, @post, @comment], url: update_comment_path(@city.id, @post.id, @comment.id), method: "patch") do |f| %>
+        <div class="container-gray">
+        	<div class="input-field">
+        	</div>
+        	<div class="input-field">
+        		<%= f.text_field :content, placeholder: "Enter comment", class: "form-control" %>
+        	</div>
+        	<div class="input-field">
+        		<%= link_to "Cancel", :back, class: "btn btn-secondary" %>
+        		<%= f.submit "Save Changes", class: "btn btn-primary" %>
+        	</div>
+        </div>
+    <% end %>
+    
+</section>
