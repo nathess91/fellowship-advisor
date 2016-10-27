@@ -1,3 +1,40 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.profile-image {
+	display: block;
+	width: 240px;
+	padding: 0;
+	margin: 0 0 15px;
+}
+
+.post-user-name {
+	display: block;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+.post-title {
+	padding: 0;
+	margin: 0 0 15px;
+}
+
+.post-content {
+	display: block;
+	font-size: 18px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.comment {
+	display: block;
+	font-size: 16px;
+	margin: 15px;
+}
+
+.comment-content-wide {
+	margin: 0;
+	overflow: hidden;
+}
