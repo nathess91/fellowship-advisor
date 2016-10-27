@@ -4195,3 +4195,1069 @@ Processing by CitiesController#show as HTML
 Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for ::1 at 2016-10-26 16:58:29 -0700
+  
+LoadError (cannot load such file -- /Users/nhess/GA/projects/project-vagabond/ProjectVagabond/config/routes.rb):
+  
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:287:in `load'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:287:in `block in load'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:259:in `load_dependency'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:287:in `load'
+railties (5.0.0.1) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+railties (5.0.0.1) lib/rails/application/routes_reloader.rb:40:in `each'
+railties (5.0.0.1) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+railties (5.0.0.1) lib/rails/application/routes_reloader.rb:16:in `reload!'
+railties (5.0.0.1) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+activesupport (5.0.0.1) lib/active_support/file_update_checker.rb:77:in `execute'
+railties (5.0.0.1) lib/rails/application/routes_reloader.rb:7:in `execute'
+railties (5.0.0.1) lib/rails/application/finisher.rb:132:in `block (2 levels) in <module:Finisher>'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:396:in `instance_exec'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:547:in `block (2 levels) in default_terminator'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:546:in `catch'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:546:in `block in default_terminator'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_run_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+activesupport (5.0.0.1) lib/active_support/execution_wrapper.rb:99:in `run!'
+activesupport (5.0.0.1) lib/active_support/reloader.rb:113:in `run!'
+activesupport (5.0.0.1) lib/active_support/execution_wrapper.rb:61:in `block in run!'
+activesupport (5.0.0.1) lib/active_support/execution_wrapper.rb:58:in `tap'
+activesupport (5.0.0.1) lib/active_support/execution_wrapper.rb:58:in `run!'
+activesupport (5.0.0.1) lib/active_support/reloader.rb:59:in `run!'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:10:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+Started GET "/" for ::1 at 2016-10-26 16:59:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.8ms)
+Started GET "/favicon.ico" for ::1 at 2016-10-26 16:59:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.7ms)[0m  [1m[35mDROP TABLE "cities" CASCADE[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "cities" ("id" serial primary key, "name" character varying, "country" character varying, "picture" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "slug" character varying)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_cities_on_slug" ON "cities" USING btree ("slug")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "comments" CASCADE[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "content" character varying, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_post_id" ON "comments" USING btree ("post_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments" USING btree ("user_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "friendly_id_slugs" CASCADE[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" serial primary key, "slug" character varying NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" character varying(50), "scope" character varying, "created_at" timestamp)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" USING btree ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" USING btree ("slug", "sluggable_type")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" USING btree ("sluggable_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" USING btree ("sluggable_type")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "posts" CASCADE[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "content" character varying, "city_id" integer, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "users" CASCADE[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "current_city" character varying, "email" character varying, "password_digest" character varying, "picture" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "slug" character varying)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_slug" ON "users" USING btree ("slug")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (15.6ms)[0m  [1m[35mDROP TABLE "cities" CASCADE[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "cities" ("id" serial primary key, "name" character varying, "country" character varying, "picture" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "slug" character varying)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_cities_on_slug" ON "cities" USING btree ("slug")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "content" character varying, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_post_id" ON "comments" USING btree ("post_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments" USING btree ("user_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "friendly_id_slugs" CASCADE[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" serial primary key, "slug" character varying NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" character varying(50), "scope" character varying, "created_at" timestamp)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" USING btree ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" USING btree ("slug", "sluggable_type")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" USING btree ("sluggable_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" USING btree ("sluggable_type")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "posts" CASCADE[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "content" character varying, "city_id" integer, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "users" CASCADE[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "current_city" character varying, "email" character varying, "password_digest" character varying, "picture" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "slug" character varying)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_slug" ON "users" USING btree ("slug")[0m
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20161026183527')[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "cities" WHERE ("cities"."id" IS NOT NULL) AND "cities"."slug" = $1 LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "country", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "The Shire"], ["country", "Eriador"], ["picture", "https://s-media-cache-ak0.pinimg.com/originals/28/59/1d/28591dcb69a0d6ad3701dab8939d3561.jpg"], ["created_at", 2016-10-27 00:00:15 UTC], ["updated_at", 2016-10-27 00:00:15 UTC], ["slug", "the-shire"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "cities" WHERE ("cities"."id" IS NOT NULL) AND "cities"."slug" = $1 LIMIT $2[0m  [["slug", "rivendell"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "country", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rivendell"], ["country", "Eriador"], ["picture", "http://vignette4.wikia.nocookie.net/lotr/images/5/53/Rivendell_-_The_Hobbit.PNG/revision/latest?cb=20121111111511"], ["created_at", 2016-10-27 00:00:15 UTC], ["updated_at", 2016-10-27 00:00:15 UTC], ["slug", "rivendell"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "cities" WHERE ("cities"."id" IS NOT NULL) AND "cities"."slug" = $1 LIMIT $2[0m  [["slug", "isengard"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "country", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Isengard"], ["country", "Rohan"], ["picture", "http://vignette3.wikia.nocookie.net/lotr/images/4/42/Destruction_of_Isengard_-_Day_After.jpg/revision/latest?cb=20120606113627"], ["created_at", 2016-10-27 00:00:15 UTC], ["updated_at", 2016-10-27 00:00:15 UTC], ["slug", "isengard"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "cities" WHERE ("cities"."id" IS NOT NULL) AND "cities"."slug" = $1 LIMIT $2[0m  [["slug", "helm-s-deep"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "country", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Helm's Deep"], ["country", "Rohan"], ["picture", "http://www.lordoftherings.net/legend/lands/helmsdeep/images/helmsdeep1_large.jpg"], ["created_at", 2016-10-27 00:00:15 UTC], ["updated_at", 2016-10-27 00:00:15 UTC], ["slug", "helm-s-deep"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "cities" WHERE ("cities"."id" IS NOT NULL) AND "cities"."slug" = $1 LIMIT $2[0m  [["slug", "mount-doom"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "country", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mount Doom"], ["country", "Mordor"], ["picture", "http://www.thelandofshadow.com/wp-content/uploads/2016/02/Orodruin6.jpg"], ["created_at", 2016-10-27 00:00:15 UTC], ["updated_at", 2016-10-27 00:00:15 UTC], ["slug", "mount-doom"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCity Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "cities" WHERE ("cities"."id" IS NOT NULL) AND "cities"."slug" = $1 LIMIT $2[0m  [["slug", "shelob-s-lair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "country", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shelob's Lair"], ["country", "Mordor"], ["picture", "http://blindfolly.org/blindfolly/wp-content/uploads/2015/08/lordoftherings_-spiderweb600.jpg"], ["created_at", 2016-10-27 00:00:15 UTC], ["updated_at", 2016-10-27 00:00:15 UTC], ["slug", "shelob-s-lair"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2016-10-26 17:00:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (15.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 306ms (Views: 274.2ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:00:50 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:08:37 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:08:39 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:08:41 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:08:49 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/isengard" for ::1 at 2016-10-26 17:08:57 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"isengard"}
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "isengard"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "isengard"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 3]]
+  Rendered cities/show.html.erb within layouts/application (10.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 30.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:10:39 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  Rendered cities/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/nhess/GA/projects/project-vagabond/app/views/cities/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+  <%= image_tag(city.picture, :c...
+   ^
+/Users/nhess/GA/projects/project-vagabond/app/views/cities/index.html.erb:5: syntax error, unexpected ')', expecting keyword_end
+...cture, :class => "img-size" ) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/cities/index.html.erb:5: syntax error, unexpected '<', expecting ')'
+app/views/cities/index.html.erb:5: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.6ms)
+Started GET "/" for ::1 at 2016-10-26 17:11:30 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/city_path(city)" for ::1 at 2016-10-26 17:11:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/city_path(city)"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [42 times] (8.8ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.4ms)
+Started GET "/" for ::1 at 2016-10-26 17:11:38 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:11:56 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:11:58 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:00 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:01 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 42.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:04 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:05 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:12:06 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 39.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:10 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:11 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:12:20 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:12:23 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 35.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:12:35 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (1.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 38.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:12:41 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (2.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 49.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:12:46 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (1.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 48.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:13:38 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:14:01 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:14:16 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:14:18 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 38.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:14:34 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 41.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/new" for ::1 at 2016-10-26 17:15:28 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 53ms (Views: 39.5ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users" for ::1 at 2016-10-26 17:15:55 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dgHL/eXXMG2XvYGU+Myy1Oe0l1rRxGTXtSYIHJii2/K71wb4mYrYO/R+zSKa9KDo+lmFPn0lbWygY8MgFe9bAg==", "user"=>{"name"=>"", "current_city"=>"", "email"=>"aragorn@rangerofthenorth.com", "password"=>"[FILTERED]", "picture"=>""}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aragorn@rangerofthenorth.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "current_city", "email", "password_digest", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", ""], ["current_city", ""], ["email", "aragorn@rangerofthenorth.com"], ["password_digest", "$2a$10$v5ubd4v32jdbxtyxCx9ywO2sMj9NXQqfajYbHtoLzx7wXAbNE/lTS"], ["picture", ""], ["created_at", 2016-10-27 00:15:55 UTC], ["updated_at", 2016-10-27 00:15:55 UTC], ["slug", "eade7bcf-7e2e-461e-b1e4-dca06aedf605"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "aragorn@rangerofthenorth.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "picture" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["picture", "http://www.collecttolkien.com/images/Stickers/Sticker%20LOTR%20Middle-Earth.jpg"], ["updated_at", 2016-10-27 00:15:55 UTC], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/eade7bcf-7e2e-461e-b1e4-dca06aedf605
+Completed 302 Found in 81ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/users/eade7bcf-7e2e-461e-b1e4-dca06aedf605" for ::1 at 2016-10-26 17:15:55 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"eade7bcf-7e2e-461e-b1e4-dca06aedf605"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/eade7bcf-7e2e-461e-b1e4-dca06aedf605" for ::1 at 2016-10-26 17:16:09 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"eade7bcf-7e2e-461e-b1e4-dca06aedf605"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:16:10 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:16:12 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:16:17 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  Rendered cities/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/cities/the-shire/posts" for ::1 at 2016-10-26 17:17:14 -0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aodrK7HG+vXtetZmLw6IQaYraQ636/g7iYO+A2yHEbZnARBHiW9pIvo1Zr42FMNMjCM1F4I0AMvAeD74T5bopA==", "post"=>{"title"=>"That time we killed Saruman", "content"=>"So we didn't kill him the first time as isenguard so went over to the shire and wreaked havoc there. well played us"}, "commit"=>"Create Post", "city_id"=>"the-shire"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "city_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "That time we killed Saruman"], ["content", "So we didn't kill him the first time as isenguard so went over to the shire and wreaked havoc there. well played us"], ["city_id", 1], ["user_id", 1], ["created_at", 2016-10-27 00:17:14 UTC], ["updated_at", 2016-10-27 00:17:14 UTC]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/cities/the-shire/posts/1
+Completed 302 Found in 18ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/cities/the-shire/posts/1" for ::1 at 2016-10-26 17:17:14 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"city_id"=>"the-shire", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 35ms (Views: 21.5ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/cities/1/posts/1/comments" for ::1 at 2016-10-26 17:17:27 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qgV3qBKfGN7ilG+kvcJmXpovToMFdOoZFgUpPBX4IYungwzEKjaLCfXb33yk2C1TsCcSmjCrEulf/qnHNunYmQ==", "comment"=>{"content"=>"on second thought we fucked up"}, "commit"=>"Create Comment", "city_id"=>"1", "post_id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "on second thought we fucked up"], ["user_id", 1], ["post_id", 1], ["created_at", 2016-10-27 00:17:27 UTC], ["updated_at", 2016-10-27 00:17:27 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/cities/1/posts/1
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/cities/1/posts/1" for ::1 at 2016-10-26 17:17:27 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"city_id"=>"1", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:17:32 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/rivendell" for ::1 at 2016-10-26 17:17:34 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"rivendell"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "rivendell"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "rivendell"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 35.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:17:35 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.9ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:17:36 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered cities/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/eade7bcf-7e2e-461e-b1e4-dca06aedf605" for ::1 at 2016-10-26 17:17:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"eade7bcf-7e2e-461e-b1e4-dca06aedf605"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["user_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logout" for ::1 at 2016-10-26 17:17:39 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:17:39 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:17:42 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered cities/show.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    19: 	<% comments.each do |comment| %>
+    20: 	  <br><%= get_user(comment.user_id).name %><span>:</span>
+    21: 	  <%= comment.content %>
+    22: 		<% if current_user.id == comment.user_id %>
+    23: 		<br><%= link_to "Edit", edit_city_post_comment_path(@city.id, post.id, comment.id) %> <span> - </span>
+    24: 		<%= link_to "Delete", delete_comment_path(@city.id, post.id, comment.id), data: { confirm: 'Are you sure you want to delete this comment?' }, method: :delete %>
+    25: 		<% end %>
+  
+app/views/cities/show.html.erb:22:in `block (2 levels) in _app_views_cities_show_html_erb__3108363843298478049_70359249866220'
+app/views/cities/show.html.erb:19:in `block in _app_views_cities_show_html_erb__3108363843298478049_70359249866220'
+app/views/cities/show.html.erb:10:in `_app_views_cities_show_html_erb__3108363843298478049_70359249866220'
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/nhess/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.6ms)
+Started PUT "/__web_console/repl_sessions/0cfc7944e5bc96b467c5922325f080d3" for ::1 at 2016-10-26 17:18:26 -0700
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/0cfc7944e5bc96b467c5922325f080d3" for ::1 at 2016-10-26 17:20:10 -0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started PUT "/__web_console/repl_sessions/0cfc7944e5bc96b467c5922325f080d3" for ::1 at 2016-10-26 17:20:41 -0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/0cfc7944e5bc96b467c5922325f080d3" for ::1 at 2016-10-26 17:20:55 -0700
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/0cfc7944e5bc96b467c5922325f080d3" for ::1 at 2016-10-26 17:20:59 -0700
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:23:13 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered cities/show.html.erb within layouts/application (4.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:23:25 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities/rivendell" for ::1 at 2016-10-26 17:23:28 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"rivendell"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "rivendell"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "rivendell"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 2]]
+  Rendered cities/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 36.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/helm-s-deep" for ::1 at 2016-10-26 17:23:34 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"helm-s-deep"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "helm-s-deep"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "helm-s-deep"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 4]]
+  Rendered cities/show.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:23:38 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/isengard" for ::1 at 2016-10-26 17:23:41 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"isengard"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "isengard"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "isengard"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 3]]
+  Rendered cities/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 33.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/shelob-s-lair" for ::1 at 2016-10-26 17:23:46 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"shelob-s-lair"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "shelob-s-lair"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "shelob-s-lair"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 6]]
+  Rendered cities/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 40ms (Views: 34.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/the-shire" for ::1 at 2016-10-26 17:23:49 -0700
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"the-shire"}
+  [1m[36mCity Load (1.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."slug" = $1 ORDER BY "cities"."id" ASC LIMIT $2[0m  [["slug", "the-shire"], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."city_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["city_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered cities/show.html.erb within layouts/application (8.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/cities/the-shire/posts/1" for ::1 at 2016-10-26 17:24:02 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"city_id"=>"the-shire", "id"=>"1"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:24:02 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2016-10-26 17:24:13 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sessions" for ::1 at 2016-10-26 17:24:35 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"at/a0bAGjD1VthK0d1TOg6YRb2AnHbxhSNsZmS8pA4dEkby7biHRjEtL+LpGWtoYyzy+cTb41b2KyFV8HUr+Kw==", "user"=>{"email"=>"aragorn@ridersofthenorth.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aragorn@ridersofthenorth.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for ::1 at 2016-10-26 17:24:35 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2016-10-26 17:24:41 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2016-10-26 17:25:08 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DhqYgIX0oiMa/iYiepx/xaSC/2r7e5yPJjxoiH35KiLDzFWF+alKdXk9apQYpG35uW/tDlealTQzeaO08LSq0g==", "user"=>{"name"=>"", "current_city"=>"", "email"=>"gimlithestout@fellowship.com", "password"=>"[FILTERED]", "picture"=>""}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gimlithestout@fellowship.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "current_city", "email", "password_digest", "picture", "created_at", "updated_at", "slug") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", ""], ["current_city", ""], ["email", "gimlithestout@fellowship.com"], ["password_digest", "$2a$10$H4pAY1rC4tLTysD.OPOXfuHRSr0eGApj6jMGeoKjFftlO70odhhxW"], ["picture", ""], ["created_at", 2016-10-27 00:25:08 UTC], ["updated_at", 2016-10-27 00:25:08 UTC], ["slug", "bada86bf-7245-47e5-af63-b1dbd0427a43"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "gimlithestout@fellowship.com"], ["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "picture" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["picture", "http://www.collecttolkien.com/images/Stickers/Sticker%20LOTR%20Middle-Earth.jpg"], ["updated_at", 2016-10-27 00:25:08 UTC], ["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/bada86bf-7245-47e5-af63-b1dbd0427a43
+Completed 302 Found in 72ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/bada86bf-7245-47e5-af63-b1dbd0427a43" for ::1 at 2016-10-26 17:25:08 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"bada86bf-7245-47e5-af63-b1dbd0427a43"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1 ORDER BY "posts"."created_at" DESC[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for ::1 at 2016-10-26 17:26:36 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-26 17:26:36 -0700
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 39.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/new" for ::1 at 2016-10-26 17:26:37 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 37.2ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/users" for ::1 at 2016-10-26 17:26:45 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i0N+fwERSg5OBEgaw3V1MIU7pTJBQyfqftbAeu8YwDlGlbN6fUyiWC3HBKyhTWcMmNa3Vu2iLlFrkwtGYlVAyQ==", "user"=>{"name"=>"", "current_city"=>"", "email"=>"mom@mom.com", "password"=>"[FILTERED]", "picture"=>""}, "commit"=>"Sign Up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mom@mom.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mom@mom.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 69ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2016-10-26 17:26:45 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+

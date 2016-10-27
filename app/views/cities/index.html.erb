@@ -1,7 +1,10 @@
 <h1>Middle Earth</h1>
 <% @cities.each do |city| %>
-<div class="col-md-6">
+  <div class="col-md-6">
+<a href="<%=city_path(city)%>">
   <%= image_tag(city.picture, :class => "img-size" ) %>
   <h3><%= link_to city.name, city_path(city) %></h3>
+</a>
 </div>
+
 <% end %>
