@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-  before_action :authenticate, only: [:show, :edit,:update]
-  before_action :set_user, only: [:show, :edit,:update]
+  before_action :authenticate, only: [:show, :edit, :update]
+  before_action :set_user, only: [:show, :edit, :update]
+  before_action :authorize!, only: [:show, :edit, :update]
 
   def new
     @user = User.new
@@ -19,12 +20,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    if current_user == @user
-      @user = User.find(params[:id])
-      @posts = Post.where(user_id: current_user.id).order(created_at: :desc)
-    else
-      redirect_to user_path(current_user.id)
-    end
+    @user = User.find(params[:id])
+    @posts = Post.where(user_id: current_user.id).order(created_at: :desc)
   end
 
   def edit
@@ -48,6 +45,10 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.friendly.find(params[:id])
+  end
+
+  def authorize!
+    redirect_to user_path(current_user.id) unless current_user == @user
   end
 
 end
