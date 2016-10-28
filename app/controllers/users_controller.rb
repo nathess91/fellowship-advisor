@@ -23,8 +23,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       @posts = Post.where(user_id: current_user.id).order(created_at: :desc)
     else
-      @user = User.friendly.find(current_user.id)
-      @posts = Post.where(user_id: current_user.id).order(created_at: :desc)
+      redirect_to user_path(current_user.id)
     end
   end
 
